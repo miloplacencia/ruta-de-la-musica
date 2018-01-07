@@ -37,22 +37,25 @@ const GMap = withScriptjs(withGoogleMap(({ abrirPopup, seccion, markers }) => (
         ],
       }}
   >
-    <Marker
-      position={{ lat: -36.8292691, lng: -73.0591571 }}
-      icon={{
-          url: sprite,
-          size: new google.maps.Size(35, 44),
-          origin: new google.maps.Point(35, 0),
-        }}
-      onClick={abrirPopup('casa-de-musica')}
-      
-    />
+    {markers.filter(marker => !seccion || marker.seccion === seccion).map(marker => (
+      <Marker
+        position={{ lat: marker.lat, lng: marker.lng }}
+        icon={{
+            url: sprite,
+            size: new google.maps.Size(35, 44),
+            origin: new google.maps.Point(marker.x, 0),
+          }}
+        onClick={abrirPopup('casa-de-musica')}
+        key={marker.nombre}
+      />
+      ))}
   </GoogleMap>
 )));
 
 GMap.propTypes = {
   abrirPopup: PropTypes.func.isRequired,
   seccion: PropTypes.string.isRequired,
+  markers: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default GMap;

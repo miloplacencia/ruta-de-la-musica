@@ -10,6 +10,22 @@ class App extends Component {
     seccion: '', // seccion seleccionada
     local: '', // local abierto en popup
     popup: false, // popup abierto/cerrado
+    markers: [
+      {
+        seccion: 'musica-en-vivo',
+        nombre: 'casa-de-musica',
+        lat: -36.8292691,
+        lng: -73.0591571,
+        x: 0,
+      },
+      {
+        seccion: 'pubs-discoteques',
+        nombre: 'bodeguita-nicanor',
+        lat: -36.8164755,
+        lng: -73.0599805,
+        x: 35,
+      },
+    ],
   };
 
   cambiarSeccion = seccion => (e) => {
@@ -44,6 +60,7 @@ class App extends Component {
             mapElement={<div style={{ height: '100%' }} />}
             abrirPopup={this.abrirPopup}
             seccion={this.state.seccion}
+            markers={this.state.markers}
           />
         </div>
       </div>
