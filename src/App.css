@@ -278,6 +278,9 @@ template {
 [hidden] {
   display: none !important; }
 
+body {
+  font-family: 'open sans', sans-serif; }
+
 .rm {
   font-family: 'open sans', sans-serif; }
   .rm-mapa {
@@ -350,21 +353,32 @@ template {
         position: absolute;
         top: 50%;
         left: 350px;
-        padding: 15px;
-        width: 480px;
+        right: 15px;
+        padding: 0;
+        width: 496px;
         max-width: 90%;
         height: 400px;
         overflow: hidden;
-        margin-top: -200px; }
+        margin-top: -200px;
+        margin-left: auto;
+        margin-right: auto; }
+        .rm-mapa__container-popup img {
+          display: block;
+          margin: 0 auto; }
+        .rm-mapa__container-popup h1 {
+          font-size: 24px;
+          text-align: center;
+          font-weight: 500;
+          margin-bottom: 18px; }
         @media (max-width: 840px) {
           .rm-mapa__container-popup {
-            width: 400px; } }
-        @media (max-width: 575.99px) {
+            width: 400px;
+            max-width: 90%; } }
+        @media (max-width: 767px) {
           .rm-mapa__container-popup {
-            left: 15px;
-            right: 15px;
-            margin-left: auto;
-            margin-right: auto; } }
+            width: 496px;
+            max-width: 90%;
+            left: 15px; } }
     .rm-mapa__popup-cerrar {
       position: absolute;
       top: 15px;
@@ -374,8 +388,73 @@ template {
       height: 24px;
       padding: 0; }
     .rm-mapa__popup-inner {
-      padding: 15px;
-      overflow-y: scroll; }
+      padding: 30px;
+      overflow-y: auto;
+      height: 100%; }
+
+.sprite-local {
+  background-image: url("sprite-local.jpg");
+  background-position: 0 0;
+  display: inline-block; }
+  .sprite-local.boton {
+    width: 33px;
+    height: 33px;
+    text-decoration: none; }
+    .sprite-local.boton.facebook {
+      background-position: 0 0; }
+    .sprite-local.boton.instagram {
+      background-position: -33px 0; }
+    .sprite-local.boton.web {
+      background-position: -67px 0; }
+  .sprite-local.image {
+    height: 21px;
+    background-position: 0 -33px;
+    margin-right: 8px; }
+    .sprite-local.image.reloj {
+      width: 21px;
+      background-position: 0 -33px; }
+    .sprite-local.image.pointer {
+      width: 18px;
+      background-position: -21px -33px; }
+
+.flex {
+  display: flex; }
+  .flex.row {
+    flex-direction: row; }
+  .flex.column {
+    flex-direction: column; }
+  .flex.justify-center {
+    justify-content: center; }
+  .flex.align-center {
+    justify-content: center; }
+
+.lista {
+  list-style: none; }
+
+.p0 {
+  padding: 0; }
+
+.pb8 {
+  padding-bottom: 8px; }
+
+.m0 {
+  margin: 0; }
+
+.mb16 {
+  padding-bottom: 16px; }
+
+.half {
+  width: 50%; }
+
+.tercio {
+  width: 33.33333%; }
+
+.center {
+  margin-left: auto;
+  margin-right: auto; }
+
+.text-center {
+  text-align: center; }
 
 @keyframes App-logo-spin {
   from {

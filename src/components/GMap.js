@@ -35,21 +35,24 @@ const defaultOptions = {
   ],
 };
 
-const GMap = withScriptjs(withGoogleMap(({ abrirPopup, seccion, markers }) => (
+const GMap = withScriptjs(withGoogleMap(({
+  abrirPopup, seccion, markers, data,
+}) => (
   <GoogleMap
     defaultZoom={defaultZoom}
     defaultCenter={defaultCenter}
     defaultOptions={defaultOptions}
   >
-    {markers.filter(marker => !seccion || marker.seccion === seccion).map(marker => (
+    {data.filter(marker => !seccion || marker.seccion === seccion).map((marker, i) => (
+        // markers.filter(marker => !seccion || marker.seccion === seccion).map(marker => (
       <Marker
-        position={{ lat: marker.lat, lng: marker.lng }}
+        position={{ lat: marker.satelite.lat, lng: marker.satelite.lng }}
         icon={{
             url: sprite,
             size: new google.maps.Size(35, 44),
-            origin: new google.maps.Point(marker.x, 0),
+            origin: new google.maps.Point(0, 0),
           }}
-        onClick={abrirPopup('casa-de-musica')}
+        onClick={abrirPopup(marker.nombre, i)}
         key={marker.nombre}
       />
       ))}

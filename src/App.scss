@@ -6,6 +6,10 @@ $cyan: #68c1be;
 $gris: #414241;
 $blanco: #fff;
 
+body {
+  font-family: 'open sans', sans-serif;
+}
+
 .rm {
   font-family: 'open sans', sans-serif;
 
@@ -103,22 +107,37 @@ $blanco: #fff;
         position: absolute;
         top: 50%;
         left: 350px;
-        padding: 15px;
-        width: 480px;
+        right: 15px;
+        padding: 0;
+        width: 496px;
         max-width: 90%;
         height: 400px;
         overflow: hidden;
         margin-top: -200px;
+        margin-left: auto;
+        margin-right: auto;
+
+        img {
+          display: block;
+          margin: 0 auto;
+        }
+
+        h1 {
+          font-size: 24px;
+          text-align: center;
+          font-weight: 500;
+          margin-bottom: 18px;
+        }
 
         @media (max-width: 840px) {
           width: 400px;
+          max-width: 90%;
         }
 
-        @media (max-width: 575.99px) {
+        @media (max-width: 767px) {
+          width: 496px;
+          max-width: 90%;
           left: 15px;
-          right: 15px;
-          margin-left: auto;
-          margin-right: auto;
         }
       }
     }
@@ -134,11 +153,93 @@ $blanco: #fff;
         padding: 0;
       }
       &-inner {
-        padding: 15px;
-        overflow-y: scroll;
+        padding: 30px;
+        overflow-y: auto;
+        height: 100%;
       }
     }
   }
+}
+
+.sprite-local {
+  background-image: url('sprite-local.jpg');
+  background-position: 0 0;
+  display: inline-block;
+
+  &.boton {
+    width: 33px;
+    height: 33px;
+    text-decoration: none;
+
+    &.facebook {
+      background-position: 0 0;
+    }
+    &.instagram {
+      background-position: -33px 0;
+    }
+    &.web {
+      background-position: -67px 0;
+    }
+  }
+  &.image {
+    height: 21px;
+    background-position: 0 -33px;
+    margin-right: 8px;
+
+    &.reloj {
+      width: 21px;
+      background-position: 0 -33px;
+    }
+    &.pointer {
+      width: 18px;
+      background-position: -21px -33px;
+    }
+  }
+}
+
+.flex {
+  display: flex;
+  &.row {
+    flex-direction: row;
+  }
+  &.column {
+    flex-direction: column;
+  }
+  &.justify-center {
+    justify-content: center;
+  }
+  &.align-center {
+    justify-content: center;
+  }
+}
+
+.lista {
+  list-style: none;
+}
+.p0 {
+  padding: 0;
+}
+.pb8 {
+  padding-bottom: 8px;
+}
+.m0 {
+  margin: 0;
+}
+.mb16 {
+  padding-bottom: 16px;
+}
+.half {
+  width: 50%;
+}
+.tercio {
+  width: (100/3) + %;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.text-center {
+  text-align: center;
 }
 
 @keyframes App-logo-spin {
