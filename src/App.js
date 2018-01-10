@@ -1,4 +1,4 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable jsx-a11y/anchor-is-valid, no-undef */
 import React, { Component } from 'react';
 import './App.css';
 import GMap from './components/GMap';
@@ -23,6 +23,13 @@ class App extends Component {
         nombre: 'bodeguita-nicanor',
         lat: -36.8164755,
         lng: -73.0599805,
+        x: 35,
+      },
+      {
+        seccion: 'pubs-discoteque',
+        nombre: 'La Otra Esquina',
+        lat: -36.8149768,
+        lng: -73.0571904,
         x: 35,
       },
     ],

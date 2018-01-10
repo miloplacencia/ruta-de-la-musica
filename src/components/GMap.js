@@ -5,37 +5,41 @@ import PropTypes from 'prop-types';
 import { withScriptjs, withGoogleMap, GoogleMap, Marker } from 'react-google-maps';
 import sprite from '../sprite.png';
 
+const defaultZoom = 15;
+const defaultCenter = { lat: -36.8278726, lng: -73.0493228 };
+const defaultOptions = {
+  styles: [
+    { elementType: 'geometry', stylers: [{ color: '#474746' }] },
+    { elementType: 'labels.text.stroke', stylers: [{ color: '#333333' }] },
+    { elementType: 'labels.text.fill', stylers: [{ color: '#F1F1F1' }] },
+    {
+      featureType: 'road',
+      elementType: 'geometry',
+      stylers: [{ color: '#7a797a' }],
+    },
+    {
+      featureType: 'road.arterial',
+      elementType: 'geometry',
+      stylers: [{ color: '#c8c8c8' }],
+    },
+    {
+      featureType: 'road.highway',
+      elementType: 'geometry',
+      stylers: [{ color: '#c8c8c8' }],
+    },
+    {
+      featureType: 'water',
+      elementType: 'geometry',
+      stylers: [{ color: '#575757' }],
+    },
+  ],
+};
+
 const GMap = withScriptjs(withGoogleMap(({ abrirPopup, seccion, markers }) => (
   <GoogleMap
-    defaultZoom={15}
-    defaultCenter={{ lat: -36.8278726, lng: -73.0493228 }}
-    defaultOptions={{
-        styles: [
-          { elementType: 'geometry', stylers: [{ color: '#474746' }] },
-          { elementType: 'labels.text.stroke', stylers: [{ color: '#333333' }] },
-          { elementType: 'labels.text.fill', stylers: [{ color: '#F1F1F1' }] },
-          {
-            featureType: 'road',
-            elementType: 'geometry',
-            stylers: [{ color: '#7a797a' }],
-          },
-          {
-            featureType: 'road.arterial',
-            elementType: 'geometry',
-            stylers: [{ color: '#c8c8c8' }],
-          },
-          {
-            featureType: 'road.highway',
-            elementType: 'geometry',
-            stylers: [{ color: '#c8c8c8' }],
-          },
-          {
-            featureType: 'water',
-            elementType: 'geometry',
-            stylers: [{ color: '#575757' }],
-          },
-        ],
-      }}
+    defaultZoom={defaultZoom}
+    defaultCenter={defaultCenter}
+    defaultOptions={defaultOptions}
   >
     {markers.filter(marker => !seccion || marker.seccion === seccion).map(marker => (
       <Marker
