@@ -391,6 +391,8 @@ body {
       padding: 30px;
       overflow-y: auto;
       height: 100%; }
+    .rm-mapa__popup-scroller p {
+      font-size: 14px; }
 
 .sprite-local {
   background-image: url("sprite-local.jpg");
