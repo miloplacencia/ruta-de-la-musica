@@ -1,4 +1,4 @@
-/* eslint-disable no-undef */
+/* eslint-disable no-undef, no-unused-vars, object-curly-newline, function-paren-newline */
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -35,29 +35,29 @@ const defaultOptions = {
   ],
 };
 
-const GMap = withScriptjs(withGoogleMap(({
-  abrirPopup, seccion, markers, data,
-}) => (
-  <GoogleMap
-    defaultZoom={defaultZoom}
-    defaultCenter={defaultCenter}
-    defaultOptions={defaultOptions}
-  >
-    {data.filter(marker => !seccion || marker.seccion === seccion).map((marker, i) => (
+const GMap = withScriptjs(
+  withGoogleMap(({ abrirPopup, seccion, markers, data }) => (
+    <GoogleMap
+      defaultZoom={defaultZoom}
+      defaultCenter={defaultCenter}
+      defaultOptions={defaultOptions}
+    >
+      {data.filter(marker => !seccion || marker.seccion === seccion).map((marker, i) => (
         // markers.filter(marker => !seccion || marker.seccion === seccion).map(marker => (
-      <Marker
-        position={{ lat: marker.satelite.lat, lng: marker.satelite.lng }}
-        icon={{
+        <Marker
+          position={{ lat: marker.satelite.lat, lng: marker.satelite.lng }}
+          icon={{
             url: sprite,
             size: new google.maps.Size(35, 44),
             origin: new google.maps.Point(0, 0),
           }}
-        onClick={abrirPopup(marker.nombre, i)}
-        key={marker.nombre}
-      />
+          onClick={abrirPopup(marker.nombre, i)}
+          key={marker.nombre}
+        />
       ))}
-  </GoogleMap>
-)));
+    </GoogleMap>
+  )),
+);
 
 GMap.propTypes = {
   abrirPopup: PropTypes.func.isRequired,
