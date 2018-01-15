@@ -18,42 +18,47 @@ const sanitize = nombre =>
 
 app.get('/', async (req, res) => {
   const baseURL = path.resolve(__dirname, '../', 'public');
+  const srcURL = path.resolve(__dirname, '../', 'src');
   const logosURL = path.resolve(`${__dirname}/logos`);
-  const logoEndURL = `${baseURL}/logos`;
-  const jsonURL = `${baseURL}/rutamusica.json`;
-  const sateliteURL = `${baseURL}/direcciones.json`;
+  const logoEndURL = `${srcURL}/logos`;
+
+  const jsonURL = `${srcURL}/data-bruta.json`;
   const dataFile = `${baseURL}/data.json`;
 
   const logostmp = await readdir(logosURL);
   const jsontmp = await readFile(jsonURL, 'utf8').then(JSON.parse);
-  const satelitetmp = await readFile(sateliteURL, 'utf8').then(JSON.parse);
 
-  const json = jsontmp.map(js => ({ ...js, nombre: sanitize(js.Nombre) }));
+  const json = jsontmp.map(js => ({ ...js, n: sanitize(js.nombre) }));
 
   const logos = logostmp.map((logo) => {
-    const [nombretmp, ext] = logo.split('.');
-    const nombre = sanitize(nombretmp);
-    const empresa = json.find(js => js.nombre.includes(nombre));
+    const [nombretmp] = logo.split('.');
+    const nombre = sanitize(nombretmp).replace();
+    const empresa = json.find(js => js.n.includes(nombre));
 
-    if (empresa && empresa.Nombre) {
-      sharp(`${logosURL}/${nombretmp}.${ext}`)
+    const regexSpaces = /\s/gi;
+    const nombrefile = nombre.replace(regexSpaces, '-', 'ig');
+
+    if (empresa && empresa.nombre) {
+      sharp(`${logosURL}/${logo}`)
         .resize(200, 200)
-        .jpeg()
-        .toFile(`${logoEndURL}/${nombre.replace(' ', '-')}.jpeg`);
+        .jpeg({ quality: 85 })
+        // eslint-disable-next-line
+        .toFile(`${logoEndURL}/${nombrefile}.jpeg`);
     }
 
-    return { ...empresa, nombre, img: `/public/logos/${nombre.replace(' ', '-')}.jpeg` };
+    return { ...empresa, n: nombre, img: `/public/logos/${nombrefile}.jpeg` };
   });
+
   await Promise.all(logos);
 
-  const satelite = satelitetmp
-    .filter(sat => logos.find(l => l.Nombre === sat.Nombre))
-    .map(sat => ({ ...logos.find(l => l.Nombre === sat.Nombre), ...sat }));
-
-  await writeFile(dataFile, JSON.stringify(satelite), 'utf8');
+  await writeFile(dataFile, JSON.stringify(logos), 'utf8');
 
   // eslint-disable-next-line
-  return res.json(satelite);
+  return res.json(
+    json.map(js =>
+      ((logos.find(l => l.nombre === js.nombre) || {}).img
+        ? null
+        : { status: 'SIN_IMAGEN', nombre: js.nombre })));
 });
 
 const server = http.createServer(app);

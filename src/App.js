@@ -1,11 +1,13 @@
-/* eslint-disable jsx-a11y/anchor-is-valid, no-undef, react/no-unused-state */
+/* eslint-disable jsx-a11y/anchor-is-valid, no-undef, react/no-unused-state, no-unused-vars */
 import React, { Component } from 'react';
 import 'whatwg-fetch';
+import Promise from 'bluebird';
 
 import GMap from './components/GMap';
 import PopUp from './components/PopUp';
 import MenuMapa from './components/MenuMapa';
 import data from './data.json';
+import dataFull from './data-bruta.json';
 
 import './App.css';
 
@@ -49,6 +51,61 @@ class App extends Component {
       },
     ],
   };
+
+  componentDidMount() {
+    // setTimeout(() => {
+    //   const geocoder = new google.maps.Geocoder();
+    //   const geoPromise = address =>
+    //     new Promise((res, rej) =>
+    //       geocoder.geocode({ address }, (results, status) => res([results, status])));
+
+    //   Promise.map(
+    //     dataFull,
+    //     async (local) => {
+    //       if (local.satelite) return local.direccion;
+
+    //       const newDireccion = `${local.direccion}, ${local.comuna}`;
+
+    //       const [l, status] = await geoPromise(newDireccion)
+    //         .delay(1000)
+    //         .catch(e => console.log(e) || []);
+
+    //       console.log(status);
+
+    //       if (l && status === 'OK') {
+    //         return l.map((j) => {
+    //           if (j && j.formatted_address.indexOf(local.direccion) > -1) {
+    //             return {
+    //               ...local,
+    //               satelite: {
+    //                 lat: j.geometry.location.lat(),
+    //                 lng: j.geometry.location.lng(),
+    //               },
+    //               dir_map: j.formatted_address,
+    //             };
+    //           }
+
+    //           return {
+    //             direccion: j.formatted_address,
+    //             newdir: newDireccion,
+    //             satelite: {
+    //               lat: j.geometry.location.lat(),
+    //               lng: j.geometry.location.lng(),
+    //             },
+    //           };
+    //         });
+    //       }
+
+    //       return { direccion: newDireccion, status };
+    //     },
+    //     {
+    //       concurrency: 1,
+    //     },
+    //   )
+    //     .then(d => console.log(d) || d.filter(e => e))
+    //     .then(d => console.log(JSON.stringify(d)));
+    // }, 10000);
+  }
 
   cambiarSeccion = seccion => (e) => {
     e.preventDefault();

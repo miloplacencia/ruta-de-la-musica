@@ -42,19 +42,21 @@ const GMap = withScriptjs(
       defaultCenter={defaultCenter}
       defaultOptions={defaultOptions}
     >
-      {data.filter(marker => !seccion || marker.seccion === seccion).map((marker, i) => (
-        // markers.filter(marker => !seccion || marker.seccion === seccion).map(marker => (
-        <Marker
-          position={{ lat: marker.satelite.lat, lng: marker.satelite.lng }}
-          icon={{
-            url: sprite,
-            size: new google.maps.Size(35, 44),
-            origin: new google.maps.Point(0, 0),
-          }}
-          onClick={abrirPopup(marker.nombre, i)}
-          key={marker.nombre}
-        />
-      ))}
+      {data.filter(marker => !seccion || marker.seccion === seccion).map(
+        (marker, i) =>
+          (marker.satelite ? (
+            <Marker
+              position={{ lat: marker.satelite.lat, lng: marker.satelite.lng }}
+              icon={{
+                url: sprite,
+                size: new google.maps.Size(35, 44),
+                origin: new google.maps.Point(0, 0),
+              }}
+              onClick={abrirPopup(marker.nombre, i)}
+              key={marker.nombre}
+            />
+          ) : null),
+      )}
     </GoogleMap>
   )),
 );

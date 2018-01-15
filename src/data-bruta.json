@@ -6,13 +6,17 @@
     "resena":
       "LOE es una potente mezcla que ha dado forma a la fiesta, bohemia y vida nocturna en Concepción por más de 3 años. Es un referente para las nuevas escenas musicales, tanto nacionales como del mundo,y entrega una variedad de espacios con la unión de distintos ambientes y estilos, pero respetando su identidad.",
     "comuna": "Concepción",
-    "direccion": "Anibal Pinto 1590",
+    "direccion": "Aníbal Pinto 1590",
     "web": "",
     "fb": "www.facebook.com/La-Otra-Esquina-1453032478301579",
     "ig": "https://www.instagram.com/laotraesquina/",
     "fono": "9 6718 7326",
     "horario": "21:30-5:30",
-    "mail": "laotraesquina1590@gmail.com"
+    "mail": "laotraesquina1590@gmail.com",
+    "satelite": {
+      "lat": -36.81504839999999,
+      "lng": -73.0569415
+    }
   },
   {
     "cat": "Discoteque",
@@ -27,7 +31,8 @@
     "ig": "https://www.instagram.com/clubresidencia_/",
     "fono": "",
     "horario": "23:00-5:00",
-    "mail": "produccion@clubresidencia.cl"
+    "mail": "produccion@clubresidencia.cl",
+    "satelite": { "lat": -36.8210713, "lng": -73.064436 }
   },
   {
     "cat": "Discoteque",
@@ -42,7 +47,11 @@
     "ig": "https://www.instagram.com/clubmajaccp/",
     "fono": "9 9080 7952",
     "horario": "19:00-3:00",
-    "mail": "clubmajaccp@gmail.com"
+    "mail": "clubmajaccp@gmail.com",
+    "satelite": {
+      "lat": -36.8135997,
+      "lng": -73.05718179999997
+    }
   },
   {
     "cat": "Barrio Brasil",
@@ -57,7 +66,11 @@
     "ig": "https://www.instagram.com/casadesalud/",
     "fono": "",
     "horario": "20:00 - 05:00",
-    "mail": ""
+    "mail": "",
+    "satelite": {
+      "lat": -36.8150506,
+      "lng": -73.05952890000003
+    }
   },
   {
     "cat": "Barrio Brasil",
@@ -72,7 +85,11 @@
     "ig": "https://www.instagram.com/labodeguitadenicanor/",
     "fono": "9 6447 7473",
     "horario": "21:00-4:00",
-    "mail": "labodeguitadenicanor@gmail.com"
+    "mail": "labodeguitadenicanor@gmail.com",
+    "satelite": {
+      "lat": -36.8164622,
+      "lng": -73.05998899999997
+    }
   },
   {
     "cat": "Barrio Brasil",
@@ -81,13 +98,17 @@
     "resena":
       "Nuevo Espacio para el Arte, Musica, y carrete \nSomos una Gran Familia y Nuestra Casa abre las puertas a todos los amigos que deseen visitarnos, amenizamos con musica en vivo, teatro, Disco, Djs, Poesia, y Mucho Arte!!!... sé parte de nuestra familia.",
     "comuna": "Concepción",
-    "direccion": "Anibal Pinto 1661",
+    "direccion": "Aníbal Pinto 1661",
     "web": "",
     "fb": "https://www.facebook.com/casadelamusicaconce/",
     "ig": "https://www.instagram.com/casadelamusic/",
     "fono": "9 5681 0985",
     "horario": "17:30-23:30",
-    "mail": ""
+    "mail": "",
+    "satelite": {
+      "lat": -36.8143336,
+      "lng": -73.05763279999996
+    }
   },
   {
     "cat": "Espacio Cultural",
@@ -102,7 +123,11 @@
     "ig": "",
     "fono": "413221674",
     "horario": "10:00-22:00",
-    "mail": "cuartitoestudio@gmail.com"
+    "mail": "cuartitoestudio@gmail.com",
+    "satelite": {
+      "lat": -36.8190417,
+      "lng": -73.03857599999998
+    }
   },
   {
     "cat": "Espacio Cultural",
@@ -117,7 +142,11 @@
     "ig": "",
     "fono": "412237937",
     "horario": "10.00-19:00",
-    "mail": "c3concepcion@gmail.com"
+    "mail": "c3concepcion@gmail.com",
+    "satelite": {
+      "lat": -36.8222083,
+      "lng": -73.05530010000001
+    }
   },
   {
     "cat": "Espacio Cultural",
@@ -125,13 +154,14 @@
     "nombre": "Sala 2",
     "resena": "",
     "comuna": "Concepción",
-    "direccion": "Anibal Pinto 343",
+    "direccion": "Aníbal Pinto 343",
     "web": "",
     "fb": "www.facebook.com/teatrosalados.ex",
     "ig": "",
     "fono": "41 274 0319",
     "horario": "14:00-19:00",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.82800870000001, "lng": -73.04893870000001 }
   },
   {
     "cat": "Espacio Cultural",
@@ -146,7 +176,8 @@
     "ig": "",
     "fono": "41 221 4954",
     "horario": "9:00-20:00",
-    "mail": "centroespanolconcepcion@gmail.com"
+    "mail": "centroespanolconcepcion@gmail.com",
+    "satelite": { "lat": -36.8264943, "lng": -73.05021019999998 }
   },
   {
     "cat": "Espacio Cultural",
@@ -161,7 +192,8 @@
     "ig": "",
     "fono": "41 324 0937",
     "horario": "10:00-23:00",
-    "mail": "reaccionbinarioconce@gmail.com"
+    "mail": "reaccionbinarioconce@gmail.com",
+    "satelite": { "lat": -36.8238545, "lng": -73.03884049999999 }
   },
   {
     "cat": "Espacio Cultural",
@@ -175,7 +207,8 @@
     "ig": "",
     "fono": "9 7943 7984",
     "horario": "",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.8211129, "lng": -73.04047939999998 }
   },
   {
     "cat": "Espacio Cultural",
@@ -184,13 +217,17 @@
     "resena":
       "Estamos dedicados a prestar servicios de calidad relacionados a la industria musical.\nSalas de ensayo, estudio de grabación, mezcla, mastering,",
     "comuna": "Concepción",
-    "direccion": "Anibal pinto 1173",
+    "direccion": "Aníbal Pinto 1173",
     "web": "",
     "fb": "https://facebook.com/subsalas/",
     "ig": "",
     "fono": "9 7528 3260",
     "horario": "13:00-22:00",
-    "mail": "rodrigo.candia.ortiz@gmail.com"
+    "mail": "rodrigo.candia.ortiz@gmail.com",
+    "satelite": {
+      "lat": -36.8195736,
+      "lng": -73.0543453
+    }
   },
   {
     "cat": "Espacio Cultural",
@@ -205,7 +242,8 @@
     "ig": "",
     "fono": "41 218 3367",
     "horario": "",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.7754871, "lng": -73.06867729999999 }
   },
   {
     "cat": "Espacio Cultural",
@@ -213,13 +251,14 @@
     "nombre": "Sala Federico Ramirez",
     "resena": "",
     "comuna": "Concepción",
-    "direccion": "O´Higgins 555",
+    "direccion": "Bernardo O'Higgins 555",
     "web": "",
     "fb": "",
     "ig": "",
     "fono": "",
     "horario": "10:30-19:00",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.8279777, "lng": -73.05101769999999 }
   },
   {
     "cat": "Espacio Cultural",
@@ -233,7 +272,11 @@
     "ig": "",
     "fono": "",
     "horario": "8:30-14:00 , 15:00-18:00",
-    "mail": ""
+    "mail": "",
+    "satelite": {
+      "lat": -36.8452665,
+      "lng": -73.1062438
+    }
   },
   {
     "cat": "Espacio Cultural",
@@ -241,13 +284,14 @@
     "nombre": "Punto de Cultura",
     "resena": "",
     "comuna": "Concepción",
-    "direccion": "O'higgins 555",
+    "direccion": "Bernardo O'Higgins 555",
     "web": "www.concepcioncultural.cl",
     "fb": "www.facebook.com/concepcioncultural",
     "ig": "",
     "fono": "412266687",
     "horario": "10:30-19:00",
-    "mail": "info.concepcioncultural@gmail.com"
+    "mail": "info.concepcioncultural@gmail.com",
+    "satelite": { "lat": -36.8279777, "lng": -73.05101769999999 }
   },
   {
     "cat": "Espacio Cultural",
@@ -262,7 +306,11 @@
     "ig": "",
     "fono": "",
     "horario": "",
-    "mail": ""
+    "mail": "",
+    "satelite": {
+      "lat": -36.829763,
+      "lng": -73.058206
+    }
   },
   {
     "cat": "Espacio Cultural",
@@ -271,13 +319,14 @@
     "resena":
       "Teatro Universidad de Concepción, gestionado por la Corporación Cultural de la casa de estudios. Hogar de la Orquesta Sinfónica, cine y teatro, entre otros",
     "comuna": "Concepción",
-    "direccion": "O'higgins 650",
+    "direccion": "Bernardo O'Higgins 650",
     "web": "www.corcudec.cl",
     "fb": "www.facebook.com/TeatroUniversidaddeConcepcion/",
     "ig": "https://www.instagram.com/corcudec/",
     "fono": "412243536",
     "horario": "12:00-15:00 , 15:45-21:30",
-    "mail": "contacto@corcudec.cl"
+    "mail": "contacto@corcudec.cl",
+    "satelite": { "lat": -36.827829, "lng": -73.04978399999999 }
   },
   {
     "cat": "Espacio Cultural",
@@ -292,7 +341,8 @@
     "ig": "",
     "fono": "41 214 0100",
     "horario": "12:00-6:00",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.77664499999999, "lng": -73.073239 }
   },
   {
     "cat": "Espacio Cultural",
@@ -307,7 +357,8 @@
     "ig": "https://www.instagram.com/culturaucsc/",
     "fono": "412345061",
     "horario": "",
-    "mail": "centrodeextension@ucsc.cl"
+    "mail": "centrodeextension@ucsc.cl",
+    "satelite": { "lat": -36.798554, "lng": -73.05591700000002 }
   },
   {
     "cat": "Espacio Cultural",
@@ -321,7 +372,11 @@
     "ig": "",
     "fono": "412626146",
     "horario": "",
-    "mail": ""
+    "mail": "",
+    "satelite": {
+      "lat": -36.8273281,
+      "lng": -73.0511739
+    }
   },
   {
     "cat": "Espacio Cultural",
@@ -335,7 +390,8 @@
     "ig": "",
     "fono": "412211256",
     "horario": "",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.8260255, "lng": -73.0438762 }
   },
   {
     "cat": "Espacio Cultural",
@@ -350,7 +406,8 @@
     "ig": "",
     "fono": "41 322 0525",
     "horario": "10:30-19:30",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.8313283, "lng": -73.04514240000003 }
   },
   {
     "cat": "Espacio Cultural",
@@ -365,7 +422,11 @@
     "ig": "",
     "fono": "",
     "horario": "",
-    "mail": "info@teatroregionaldelbiobio.cl"
+    "mail": "info@teatroregionaldelbiobio.cl",
+    "satelite": {
+      "lat": -36.832449,
+      "lng": -73.0659684
+    }
   },
   {
     "cat": "Espacio Cultural",
@@ -374,13 +435,14 @@
     "resena":
       "La misión de Artistas del Acero es fomentar la creación y difusión de las artes, conservación y difusión del patrimonio, propiciación del desarrollo cultural, descentralización y participación de la comunidad. Para cumplir este objetivo entrega a sus estudiantes un espacio de amplia cobertura en las distintas áreas de la creación de excelencia. Artistas del Acero se ha caracterizado, además por ser un férreo promotor de las artes en la región, brindando apoyo técnico y financiero a múltiples proyectos y artistas que así lo han requerido.",
     "comuna": "Concepción",
-    "direccion": "O`Higgins 1255",
+    "direccion": "Bernardo O'Higgins 1255",
     "web": "http://www.artistasdelacero.cl/",
     "fb": "https://www.facebook.com/artistasdelacero/",
     "ig": "https://www.instagram.com/artistasdelacero/",
     "fono": "",
     "horario": "",
-    "mail": "comunicaciones@artistasdelacero.cl"
+    "mail": "comunicaciones@artistasdelacero.cl",
+    "satelite": { "lat": -36.8243844, "lng": -73.04234930000001 }
   },
   {
     "cat": "Tiendas de música y estudios de grabación",
@@ -394,7 +456,8 @@
     "ig": "",
     "fono": "9 6685 8066",
     "horario": "",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.82661239999999, "lng": -73.05281639999998 }
   },
   {
     "cat": "Tiendas de música y estudios de grabación",
@@ -409,7 +472,8 @@
     "ig": "",
     "fono": "9 8784 1501",
     "horario": "",
-    "mail": "souvenirestudio@gmail.com"
+    "mail": "souvenirestudio@gmail.com",
+    "satelite": { "lat": -36.8205257, "lng": -73.05028010000001 }
   },
   {
     "cat": "Tiendas de música y estudios de grabación",
@@ -424,7 +488,8 @@
     "ig": "",
     "fono": "9 8730 3175",
     "horario": "",
-    "mail": "contactoleufu@gmail.com"
+    "mail": "contactoleufu@gmail.com",
+    "satelite": { "lat": -36.8149624, "lng": -73.059642 }
   },
   {
     "cat": "Tiendas de música y estudios de grabación",
@@ -439,7 +504,8 @@
     "ig": "",
     "fono": "9 6447 7473",
     "horario": "",
-    "mail": "contacto@artefactomusic.com"
+    "mail": "contacto@artefactomusic.com",
+    "satelite": { "lat": -36.8164622, "lng": -73.05998899999997 }
   },
   {
     "cat": "Tiendas de música y estudios de grabación",
@@ -453,7 +519,11 @@
     "ig": "",
     "fono": "",
     "horario": "",
-    "mail": ""
+    "mail": "",
+    "satelite": {
+      "lat": -36.826567,
+      "lng": -73.0528449
+    }
   },
   {
     "cat": "Tiendas de música y estudios de grabación",
@@ -467,7 +537,11 @@
     "ig": "",
     "fono": "41 223 25 32",
     "horario": "",
-    "mail": ""
+    "mail": "",
+    "satelite": {
+      "lat": -36.826567,
+      "lng": -73.0528449
+    }
   },
   {
     "cat": "Tiendas de música y estudios de grabación",
@@ -481,7 +555,8 @@
     "ig": "",
     "fono": "9 5523 7497",
     "horario": "",
-    "mail": "ventas@solovinilos.cl"
+    "mail": "ventas@solovinilos.cl",
+    "satelite": { "lat": -36.8287921, "lng": -73.04958299999998 }
   },
   {
     "cat": "Estudia Música en Conce",
@@ -495,7 +570,8 @@
     "ig": "",
     "fono": "41 223 49 64",
     "horario": "",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.8257961, "lng": -73.04315209999999 }
   },
   {
     "cat": "Estudia Música en Conce",
@@ -504,13 +580,14 @@
     "resena":
       "La misión de Artistas del Acero es fomentar la creación y difusión de las artes, conservación y difusión del patrimonio, propiciación del desarrollo cultural, descentralización y participación de la comunidad. Para cumplir este objetivo entrega a sus estudiantes un espacio de amplia cobertura en las distintas áreas de la creación de excelencia. Artistas del Acero se ha caracterizado, además por ser un férreo promotor de las artes en la región, brindando apoyo técnico y financiero a múltiples proyectos y artistas que así lo han requerido.",
     "comuna": "Concepción",
-    "direccion": "O`Higgins 1255",
+    "direccion": "Bernardo O'Higgins 1255",
     "web": "http://www.artistasdelacero.cl/",
     "fb": "https://www.facebook.com/artistasdelacero/",
     "ig": "https://www.instagram.com/artistasdelacero/",
     "fono": "",
     "horario": "",
-    "mail": "comunicaciones@artistasdelacero.cl"
+    "mail": "comunicaciones@artistasdelacero.cl",
+    "satelite": { "lat": -36.8243844, "lng": -73.04234930000001 }
   },
   {
     "cat": "Estudia Música en Conce",
@@ -524,7 +601,8 @@
     "ig": "",
     "fono": "41 278 54 03",
     "horario": "10:00-13:00 , 15:00-18:00",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.8102382, "lng": -73.0588252 }
   },
   {
     "cat": "Estudia Música en Conce",
@@ -540,7 +618,8 @@
     "ig": "https://www.instagram.com/panoramaudec/",
     "fono": "41 222 55 64",
     "horario": "",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.8280726, "lng": -73.0393201 }
   },
   {
     "cat": "Estudia Música en Conce",
@@ -556,7 +635,8 @@
     "ig": "",
     "fono": "9 5719 5926",
     "horario": "",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.81488, "lng": -73.05956500000002 }
   },
   {
     "cat": "Estudia Música en Conce",
@@ -570,7 +650,8 @@
     "ig": "",
     "fono": "600 444 4444",
     "horario": "",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.8249588, "lng": -73.06209319999999 }
   },
   {
     "cat": "Estudia Música en Conce",
@@ -585,7 +666,8 @@
     "ig": "",
     "fono": "41 221 75 08",
     "horario": "",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.823301, "lng": -73.03890050000001 }
   },
   {
     "cat": "Estudia Música en Conce",
@@ -600,7 +682,8 @@
     "ig": "",
     "fono": "9 7860 1353",
     "horario": "",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.8117631, "lng": -73.05119409999998 }
   },
   {
     "cat": "Estudia Música en Conce",
@@ -615,7 +698,8 @@
     "ig": "",
     "fono": "41 311 17 48",
     "horario": "",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.8255765, "lng": -73.0409871 }
   },
   {
     "cat": "Sector Plaza Perú",
@@ -630,7 +714,8 @@
     "ig": "https://www.instagram.com/barconcepcion/",
     "fono": "999498537",
     "horario": "17:00-2:00",
-    "mail": "barconcepcion@gmail.com"
+    "mail": "barconcepcion@gmail.com",
+    "satelite": { "lat": -36.8277417, "lng": -73.04106100000001 }
   },
   {
     "cat": "Sector Plaza Perú",
@@ -645,7 +730,8 @@
     "ig": "https://www.instagram.com/barcallejon/",
     "fono": "413830834",
     "horario": "18:00-1:00",
-    "mail": "barcallejoncochrane@gmail.com"
+    "mail": "barcallejoncochrane@gmail.com",
+    "satelite": { "lat": -36.8261741, "lng": -73.04083980000001 }
   },
   {
     "cat": "Sector Plaza Perú",
@@ -659,7 +745,8 @@
     "ig": "",
     "fono": "",
     "horario": "",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.8272421, "lng": -73.04019089999997 }
   },
   {
     "cat": "Música en Vivo",
@@ -673,7 +760,8 @@
     "ig": "",
     "fono": "41 276 4077",
     "horario": "20:00-2:00",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.81428349999999, "lng": -73.0593116 }
   },
   {
     "cat": "Calle Maipu",
@@ -687,7 +775,8 @@
     "ig": "",
     "fono": "",
     "horario": "18:00-3:00",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.821614, "lng": -73.04495059999999 }
   },
   {
     "cat": "Calle Maipu",
@@ -702,7 +791,8 @@
     "ig": "",
     "fono": "",
     "horario": "17:00-1:00",
-    "mail": "elavernobandas@gmail.com"
+    "mail": "elavernobandas@gmail.com",
+    "satelite": { "lat": -36.8205259, "lng": -73.0423927 }
   },
   {
     "cat": "Espacios Públicos",
@@ -716,7 +806,8 @@
     "ig": "",
     "fono": "",
     "horario": "",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.8452665, "lng": -73.10624380000002 }
   },
   {
     "cat": "Espacios Públicos",
@@ -730,7 +821,8 @@
     "ig": "",
     "fono": "",
     "horario": "",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.815862, "lng": -73.03201539999998 }
   },
   {
     "cat": "Espacios Públicos",
@@ -744,7 +836,8 @@
     "ig": "",
     "fono": "",
     "horario": "",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.8434373, "lng": -73.03835839999999 }
   },
   {
     "cat": "Espacio Cultural",
@@ -758,7 +851,8 @@
     "ig": "",
     "fono": "41 222 64 66",
     "horario": "",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.8298079, "lng": -73.0509821 }
   },
   {
     "cat": "Hitos",
@@ -772,7 +866,8 @@
     "ig": "",
     "fono": "",
     "horario": "",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.8325163, "lng": -73.04815580000002 }
   },
   {
     "cat": "Hitos",
@@ -780,13 +875,14 @@
     "nombre": "Plaza Independencia",
     "resena": "",
     "comuna": "Concepción",
-    "direccion": "O'Higgins 630",
+    "direccion": "Bernardo O'Higgins 630",
     "web": "",
     "fb": "",
     "ig": "",
     "fono": "",
     "horario": "",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.8278293, "lng": -73.04999800000002 }
   },
   {
     "cat": "Hitos",
@@ -800,7 +896,8 @@
     "ig": "",
     "fono": "",
     "horario": "",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.8316012, "lng": -73.0626893 }
   },
   {
     "cat": "Hitos",
@@ -814,7 +911,8 @@
     "ig": "",
     "fono": "",
     "horario": "",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.82918859999999, "lng": -73.03853659999999 }
   },
   {
     "cat": "Hitos",
@@ -822,13 +920,14 @@
     "nombre": "Lord Cochrane",
     "resena": "",
     "comuna": "Concepción",
-    "direccion": "O'Higgins 1127",
+    "direccion": "Bernardo O'Higgins 1127",
     "web": "",
     "fb": "",
     "ig": "",
     "fono": "",
     "horario": "",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.8250747, "lng": -73.0439465 }
   },
   {
     "cat": "Hitos",
@@ -842,7 +941,8 @@
     "ig": "",
     "fono": "",
     "horario": "",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.8201352, "lng": -73.0443904 }
   },
   {
     "cat": "Hitos",
@@ -856,7 +956,8 @@
     "ig": "",
     "fono": "",
     "horario": "",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.8273281, "lng": -73.05117389999998 }
   },
   {
     "cat": "Hitos",
@@ -870,21 +971,24 @@
     "ig": "",
     "fono": "",
     "horario": "",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.818934, "lng": -73.03473509999998 }
   },
   {
     "cat": "Donde Comer",
     "subcat": "",
     "nombre": "Fuente Penquista",
-    "resena": "Comida Criolla, injundia, concepción, rock, penquista, sanguches, O´Higgins.",
+    "resena":
+      "Comida Criolla, injundia, concepción, rock, penquista, sanguches, Bernardo O'Higgins.",
     "comuna": "Concepción",
-    "direccion": "O'higgins 63",
+    "direccion": "Bernardo O'Higgins 63",
     "web": "",
     "fb": "https://www.facebook.com/fuentepenquistaconce/",
     "ig": "https://www.instagram.com/fuentepenquista/",
     "fono": "957728491",
     "horario": "12:45-16:00 , 19:30-24:00",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.8306354, "lng": -73.05728729999998 }
   },
   {
     "cat": "Donde Comer",
@@ -899,7 +1003,8 @@
     "ig": "https://www.instagram.com/zalsi_puedes/",
     "fono": "",
     "horario": "17:00 - 2:00",
-    "mail": "zalsipuedesbar@gmail.com"
+    "mail": "zalsipuedesbar@gmail.com",
+    "satelite": { "lat": -36.7197267, "lng": -73.1102985 }
   },
   {
     "cat": "Donde Comer",
@@ -913,7 +1018,8 @@
     "ig": "https://www.instagram.com/lacocina.restobar/",
     "fono": "412235668",
     "horario": "12:00-15:00 , 16:00-23:00",
-    "mail": "lacocinaa@gmail.com"
+    "mail": "lacocinaa@gmail.com",
+    "satelite": { "lat": -36.8258576, "lng": -73.0406092 }
   },
   {
     "cat": "Donde Comer",
@@ -927,7 +1033,8 @@
     "ig": "https://www.instagram.com/1550vinoycocina/",
     "fono": "961700800",
     "horario": "13:00-15:30 , 19:00-23:30",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.84219700000001, "lng": -73.10605709999999 }
   },
   {
     "cat": "Donde Comer",
@@ -941,7 +1048,8 @@
     "ig": "https://www.instagram.com/cafedelahistoria/",
     "fono": "992009312",
     "horario": "10:00-21:00",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.8338014, "lng": -73.05006120000002 }
   },
   {
     "cat": "Donde Comer",
@@ -955,7 +1063,8 @@
     "ig": "",
     "fono": "",
     "horario": "",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.8224202, "lng": -73.0464485 }
   },
   {
     "cat": "Sector Plaza Perú",
@@ -970,7 +1079,8 @@
     "ig": "",
     "fono": "41 317 8683",
     "horario": "12:30-15:00 , 18:30-2:00",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.8279633, "lng": -73.04080629999999 }
   },
   {
     "cat": "Donde Comer",
@@ -984,7 +1094,8 @@
     "ig": "https://www.instagram.com/salavozoficial/",
     "fono": "959059106",
     "horario": "",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.84205559999999, "lng": -73.0892652 }
   },
   {
     "cat": "Donde Comer",
@@ -998,7 +1109,8 @@
     "ig": "",
     "fono": "412218835",
     "horario": "13:00-23:00",
-    "mail": "cafepabloneruda@hotmail.cl"
+    "mail": "cafepabloneruda@hotmail.cl",
+    "satelite": { "lat": -36.8262604, "lng": -73.04288739999998 }
   },
   {
     "cat": "Donde Comer",
@@ -1006,13 +1118,14 @@
     "nombre": "Al Catorce",
     "resena": "",
     "comuna": "Concepción",
-    "direccion": "O'higgins 241",
+    "direccion": "Bernardo O'Higgins 241",
     "web": "www.alcatorce.cl",
     "fb": "",
     "ig": "https://www.instagram.com/alcatorce/",
     "fono": "41 269 9486",
     "horario": "12:00-0:30",
-    "mail": "contacto@alcatorce.cl"
+    "mail": "contacto@alcatorce.cl",
+    "satelite": { "lat": -36.8294302, "lng": -73.0552007 }
   },
   {
     "cat": "Donde Comer",
@@ -1026,7 +1139,11 @@
     "ig": "",
     "fono": "",
     "horario": "11:45-23:00",
-    "mail": ""
+    "mail": "",
+    "satelite": {
+      "lat": -36.7765251,
+      "lng": -73.0743826
+    }
   },
   {
     "cat": "Donde Comer",
@@ -1040,7 +1157,8 @@
     "ig": "",
     "fono": "41 317 6800",
     "horario": "12:30-15:30 , 19:30-24:00",
-    "mail": "jgajardo@jazzrestaurant.cl"
+    "mail": "jgajardo@jazzrestaurant.cl",
+    "satelite": { "lat": -36.79280809999999, "lng": -73.05700360000003 }
   },
   {
     "cat": "Donde Comer",
@@ -1048,13 +1166,14 @@
     "nombre": "Fuente Alemana",
     "resena": "",
     "comuna": "Concepción",
-    "direccion": "O'higgins 513",
+    "direccion": "Bernardo O'Higgins 513",
     "web": "www.falemana.cl",
     "fb": "https://www.facebook.com/fuentealemanacl",
     "ig": "https://www.instagram.com/fuentealemanacl/",
     "fono": "41 222 8307",
     "horario": "8:00-23:00",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.828194, "lng": -73.05156749999998 }
   },
   {
     "cat": "Donde Comer",
@@ -1068,7 +1187,8 @@
     "ig": "https://www.instagram.com/margarita_bar/",
     "fono": "9 8838 8794",
     "horario": "12:30-1:00",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.8253513, "lng": -73.04081409999998 }
   },
   {
     "cat": "Sector Plaza Perú",
@@ -1082,7 +1202,8 @@
     "ig": "https://www.instagram.com/malabarconcepcion/",
     "fono": "9 4238 8237",
     "horario": "",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.8267319, "lng": -73.03903300000002 }
   },
   {
     "cat": "Donde Comer",
@@ -1096,7 +1217,8 @@
     "ig": "",
     "fono": "41 224 3430",
     "horario": "12:00-16:00 , 19:00-24:00",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.8219917, "lng": -73.05776600000002 }
   },
   {
     "cat": "Donde Comer",
@@ -1110,7 +1232,8 @@
     "ig": "",
     "fono": "41 224 6000",
     "horario": "10:00-22:00",
-    "mail": "francisco@comerciallama.cl"
+    "mail": "francisco@comerciallama.cl",
+    "satelite": { "lat": -36.8264567, "lng": -73.05036689999997 }
   },
   {
     "cat": "Donde Comer",
@@ -1124,7 +1247,8 @@
     "ig": "https://www.instagram.com/tiralomo/",
     "fono": "41 248 6449",
     "horario": "11:00-2:30",
-    "mail": "tiralomo@tiralomo.cl"
+    "mail": "tiralomo@tiralomo.cl",
+    "satelite": { "lat": -36.7898403, "lng": -73.06011949999998 }
   },
   {
     "cat": "Donde Comer",
@@ -1138,7 +1262,8 @@
     "ig": "https://www.instagram.com/rosaameliarestaurant/",
     "fono": "41 213 0294",
     "horario": "12:30-15:30 , 19:15-23:00",
-    "mail": "contacto@rosaamelia.cl"
+    "mail": "contacto@rosaamelia.cl",
+    "satelite": { "lat": -36.831838, "lng": -73.05085600000001 }
   },
   {
     "cat": "Donde Comer",
@@ -1152,7 +1277,8 @@
     "ig": "https://www.instagram.com/latitud_sur/",
     "fono": "41 223 5727",
     "horario": "10:30-2:00",
-    "mail": "contacto@latsur.cl"
+    "mail": "contacto@latsur.cl",
+    "satelite": { "lat": -36.8332884, "lng": -73.05002250000001 }
   },
   {
     "cat": "Donde Comer",
@@ -1166,7 +1292,8 @@
     "ig": "https://www.instagram.com/alairepub/",
     "fono": "41 322 5122",
     "horario": "12:30-4:00",
-    "mail": "contacto@alairepub.cl"
+    "mail": "contacto@alairepub.cl",
+    "satelite": { "lat": -36.8321707, "lng": -73.04477370000001 }
   },
   {
     "cat": "Donde Comer",
@@ -1180,7 +1307,8 @@
     "ig": "https://www.instagram.com/lanticaconcepcion/",
     "fono": "41 298 0827",
     "horario": "12:30-00:30",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.8303165, "lng": -73.05380989999998 }
   },
   {
     "cat": "Donde Comer",
@@ -1194,7 +1322,8 @@
     "ig": "",
     "fono": "41 247 7290",
     "horario": "22:00-7:00",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.8120963, "lng": -73.0813809 }
   },
   {
     "cat": "Donde Comer",
@@ -1202,13 +1331,14 @@
     "nombre": "Marbella",
     "resena": "",
     "comuna": "Concepción",
-    "direccion": "O`Higgins 501",
+    "direccion": "Bernardo O'Higgins 501",
     "web": "",
     "fb": "www.facebook.com/pages/Cafe-Marbella",
     "ig": "https://www.instagram.com/cafe.marbella/",
     "fono": "41 279 3692",
     "horario": "7:30-23:00",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.8284315, "lng": -73.05176840000001 }
   },
   {
     "cat": "Donde Comer",
@@ -1222,7 +1352,8 @@
     "ig": "",
     "fono": "41 224 5829",
     "horario": "10:00-22:00",
-    "mail": "richcolocolo@gmail.com"
+    "mail": "richcolocolo@gmail.com",
+    "satelite": { "lat": -36.8275934, "lng": -73.04761589999998 }
   },
   {
     "cat": "Donde Comer",
@@ -1236,7 +1367,8 @@
     "ig": "",
     "fono": "41 322 8865",
     "horario": "12:30-17:00",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.8095086, "lng": -73.03440339999997 }
   },
   {
     "cat": "Donde Comer",
@@ -1250,7 +1382,11 @@
     "ig": "",
     "fono": "41 224 5424",
     "horario": "10:00-23:00",
-    "mail": ""
+    "mail": "",
+    "satelite": {
+      "lat": -36.8172547,
+      "lng": -73.05892310000002
+    }
   },
   {
     "cat": "Donde Comer",
@@ -1264,7 +1400,11 @@
     "ig": "",
     "fono": "41 224 1051",
     "horario": "11:00-2:00",
-    "mail": ""
+    "mail": "",
+    "satelite": {
+      "lat": -36.8192022,
+      "lng": -73.0577113
+    }
   },
   {
     "cat": "Donde Comer",
@@ -1278,7 +1418,11 @@
     "ig": "https://www.instagram.com/elirishbar/",
     "fono": "41 324 8355",
     "horario": "12:00-24:00",
-    "mail": "info@elirish.cl"
+    "mail": "info@elirish.cl",
+    "satelite": {
+      "lat": -36.8315987,
+      "lng": -73.05134609999999
+    }
   },
   {
     "cat": "Donde Comer",
@@ -1292,7 +1436,11 @@
     "ig": "https://www.instagram.com/haciendapatagonia/",
     "fono": "41 273 0050",
     "horario": "13:00-15:30 , 20:00-23:00",
-    "mail": "reservas@haciendapatagonia.cl"
+    "mail": "reservas@haciendapatagonia.cl",
+    "satelite": {
+      "lat": -36.863694,
+      "lng": -73.06970799999999
+    }
   },
   {
     "cat": "Donde Comer",
@@ -1306,7 +1454,8 @@
     "ig": "",
     "fono": "41 246 2451",
     "horario": "19:30-23:00",
-    "mail": "el.lenobrasasypastas@gmail.com"
+    "mail": "el.lenobrasasypastas@gmail.com",
+    "satelite": { "lat": -36.8530606, "lng": -73.07300090000001 }
   },
   {
     "cat": "Donde Comer",
@@ -1320,7 +1469,8 @@
     "ig": "http://www.instagram.com/LABARRA.ANDALUE",
     "fono": "",
     "horario": "19:00-01:30",
-    "mail": "labarra@labarraandalue.cl"
+    "mail": "labarra@labarraandalue.cl",
+    "satelite": { "lat": -36.855601, "lng": -73.09779170000002 }
   },
   {
     "cat": "Donde Comer",
@@ -1334,7 +1484,8 @@
     "ig": "",
     "fono": "41 249 1749",
     "horario": "10:00 - 19:30",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.840992, "lng": -73.00804599999998 }
   },
   {
     "cat": "Donde Comer",
@@ -1348,7 +1499,11 @@
     "ig": "",
     "fono": "",
     "horario": "",
-    "mail": ""
+    "mail": "",
+    "satelite": {
+      "lat": -36.833843,
+      "lng": -73.036709
+    }
   },
   {
     "cat": "Donde Comer",
@@ -1362,7 +1517,8 @@
     "ig": "",
     "fono": "412747990",
     "horario": "09:00 - 16:00",
-    "mail": "lacacerola.conce@gmail.com"
+    "mail": "lacacerola.conce@gmail.com",
+    "satelite": { "lat": -36.812067, "lng": -73.0558274 }
   },
   {
     "cat": "Donde Comer",
@@ -1376,6 +1532,7 @@
     "ig": "",
     "fono": "9 66451576",
     "horario": "",
-    "mail": ""
+    "mail": "",
+    "satelite": { "lat": -36.8413038, "lng": -73.10069959999998 }
   }
 ]
