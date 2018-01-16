@@ -42,7 +42,7 @@ const GMap = withScriptjs(
       defaultCenter={defaultCenter}
       defaultOptions={defaultOptions}
     >
-      {data.filter(marker => !seccion || marker.seccion === seccion).map(
+      {data.filter(marker => !seccion || marker.cat === seccion).map(
         (marker, i) =>
           (marker.satelite ? (
             <Marker
