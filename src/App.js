@@ -99,6 +99,13 @@ class App extends Component {
     }
   };
 
+  cambiarSeccionSelect = e => {
+    const seccion = e.target.value;
+    if (seccion === -1) return false;
+
+    this.setState({ seccion });
+  };
+
   cerrarPopup = () => this.setState({ popup: false, local: '' });
   abrirPopup = (local = '') => () => this.setState({ local, popup: true });
 
@@ -117,6 +124,7 @@ class App extends Component {
           seccion={this.state.seccion}
           secciones={this.state.secciones}
           cambiarSeccion={this.cambiarSeccion}
+          cambiarSeccionSelect={this.cambiarSeccionSelect}
         />
         <div className="rm-mapa__container">
           <PopUp

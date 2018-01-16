@@ -322,6 +322,17 @@ body {
                 padding-left: 0; }
               .rm-mapa__menu-nav li:nth-child(2n + 1) {
                 padding-right: 0; } }
+          @media (max-width: 575.99px) {
+            .rm-mapa__menu-nav li.desktop {
+              display: none; } }
+          .rm-mapa__menu-nav li.movil select {
+            width: 100%;
+            display: block; }
+          @media (min-width: 576px) {
+            .rm-mapa__menu-nav li.movil {
+              display: none; } }
+          .rm-mapa__menu-nav li input[type='text'] {
+            width: 100%; }
         .rm-mapa__menu-nav a {
           display: flex;
           flex-direction: row;

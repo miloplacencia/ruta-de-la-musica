@@ -56,12 +56,31 @@ body {
 
           @media (max-width: 575.99px) {
             width: 100%;
+
             &:nth-child(2n) {
               padding-left: 0;
             }
             &:nth-child(2n + 1) {
               padding-right: 0;
             }
+          }
+
+          &.desktop {
+            @media (max-width: 575.99px) {
+              display: none;
+            }
+          }
+          &.movil {
+            select {
+              width: 100%;
+              display: block;
+            }
+            @media (min-width: 576px) {
+              display: none;
+            }
+          }
+          input[type='text'] {
+            width: 100%;
           }
         }
         a {

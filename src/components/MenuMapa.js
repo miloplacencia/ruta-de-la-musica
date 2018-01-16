@@ -2,11 +2,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const MenuMapa = ({ secciones, seccion, cambiarSeccion }) => (
+const MenuMapa = ({ secciones, seccion, cambiarSeccion, cambiarSeccionSelect }) => (
   <div className="rm-mapa__menu">
     <ul className="rm-mapa__menu-nav">
       {secciones.map(sec => (
-        <li>
+        <li class="desktop">
           <a href="#" onClick={cambiarSeccion(sec)} className={seccion === sec ? 'activo' : ''}>
             <strong>{sec}</strong>
           </a>
@@ -120,6 +120,18 @@ const MenuMapa = ({ secciones, seccion, cambiarSeccion }) => (
           </a>
         </li>
       */}
+      <li className="movil">
+        <a href="#">
+          <select onChange={cambiarSeccionSelect}>
+            <option value="-1">Filtros Categorías</option>
+            {secciones.map(sec => (
+              <option class="" value={sec} key={sec}>
+                {sec}
+              </option>
+            ))}
+          </select>
+        </a>
+      </li>
       <li>
         <a href="#">
           <svg width="26" height="26" viewBox="0 0 13 13">
