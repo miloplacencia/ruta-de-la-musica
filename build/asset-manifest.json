@@ -1,8 +1,9 @@
 {
-  "main.css": "static/css/main.742bbc35.css",
-  "main.css.map": "static/css/main.742bbc35.css.map",
-  "main.js": "static/js/main.23493ed9.js",
-  "main.js.map": "static/js/main.23493ed9.js.map",
+  "main.css": "static/css/main.ac35f308.css",
+  "main.css.map": "static/css/main.ac35f308.css.map",
+  "main.js": "static/js/main.4b712e3f.js",
+  "main.js.map": "static/js/main.4b712e3f.js.map",
   "static/media/la-bodeguita-de-nicanor.jpeg": "static/media/la-bodeguita-de-nicanor.a59e36bf.jpeg",
-  "static/media/reaccion-binario.jpeg": "static/media/reaccion-binario.ae1205a9.jpeg"
+  "static/media/reaccion-binario.jpeg": "static/media/reaccion-binario.ae1205a9.jpeg",
+  "static/media/sprite.png": "static/media/sprite.f2011dbc.png"
 }
