@@ -62,7 +62,14 @@ const mapaSecciones = {
   ),
 };
 
-const MenuMapa = ({ secciones, seccion, cambiarSeccion, cambiarSeccionSelect }) => (
+const MenuMapa = ({
+  secciones,
+  seccion,
+  cambiarSeccion,
+  cambiarSeccionSelect,
+  busqueda,
+  onChangeBusqueda,
+}) => (
   <div className="rm-mapa__menu">
     <ul className="rm-mapa__menu-nav">
       {secciones.map(sec => (
@@ -93,7 +100,7 @@ const MenuMapa = ({ secciones, seccion, cambiarSeccion, cambiarSeccionSelect }) 
               d="M12.649 10.954L9.413 7.717c.47-.77.746-1.671.746-2.637A5.085 5.085 0 0 0 5.08 0 5.085 5.085 0 0 0 0 5.08a5.085 5.085 0 0 0 5.08 5.08c.966 0 1.868-.277 2.637-.748l3.237 3.237c.226.226.526.351.847.351.32 0 .622-.125.848-.35.227-.227.351-.528.351-.849 0-.32-.124-.62-.351-.847m-1.408 1.408L8.062 9.183c.43-.314.808-.69 1.12-1.121l3.18 3.18c.15.15.232.348.232.56 0 .21-.082.41-.233.56a.81.81 0 0 1-1.12 0M.407 5.08A4.678 4.678 0 0 1 5.08.406 4.678 4.678 0 0 1 9.753 5.08a4.643 4.643 0 0 1-.86 2.692A4.69 4.69 0 0 1 5.08 9.753 4.678 4.678 0 0 1 .407 5.08"
             />
           </svg>
-          <input type="text" placeholder="Buscar" />
+          <input type="text" placeholder="Buscar" onChange={onChangeBusqueda} value={busqueda} />
         </a>
       </li>
     </ul>

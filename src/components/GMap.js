@@ -45,28 +45,31 @@ const seccionesIcon = {
 };
 
 const GMap = withScriptjs(
-  withGoogleMap(({ abrirPopup, seccion, data }) => (
+  withGoogleMap(({ abrirPopup, seccion, data, busqueda }) => (
     <GoogleMap
       defaultZoom={defaultZoom}
       defaultCenter={defaultCenter}
       defaultOptions={defaultOptions}
     >
-      {data.filter(marker => !seccion || marker.cat === seccion).map(
-        (marker, i) =>
-          (marker.satelite ? (
-            <Marker
-              position={{ lat: marker.satelite.lat, lng: marker.satelite.lng }}
-              icon={{
-                url: sprite,
-                scaledSize: new google.maps.Size(245, 44),
-                size: new google.maps.Size(35, 44),
-                origin: new google.maps.Point(seccionesIcon[marker.cat], 0),
-              }}
-              onClick={abrirPopup(marker.nombre, i)}
-              key={marker.nombre}
-            />
-          ) : null),
-      )}
+      {data
+        .filter(marker => !seccion || marker.cat === seccion)
+        .filter(marker => (busqueda ? marker.n.includes(busqueda) : true))
+        .map(
+          (marker, i) =>
+            (marker.satelite ? (
+              <Marker
+                position={{ lat: marker.satelite.lat, lng: marker.satelite.lng }}
+                icon={{
+                  url: sprite,
+                  scaledSize: new google.maps.Size(245, 44),
+                  size: new google.maps.Size(35, 44),
+                  origin: new google.maps.Point(seccionesIcon[marker.cat], 0),
+                }}
+                onClick={abrirPopup(marker.nombre, i)}
+                key={marker.nombre}
+              />
+            ) : null),
+        )}
     </GoogleMap>
   )),
 );

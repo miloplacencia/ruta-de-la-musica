@@ -16,6 +16,7 @@ class App extends Component {
     seccion: '', // seccion seleccionada
     local: '', // local abierto en popup
     popup: false, // popup abierto/cerrado
+    busqueda: '',
     data,
     secciones: [
       'Discoteque',
@@ -27,63 +28,6 @@ class App extends Component {
       'Tiendas de música y estudios de grabación',
     ],
   };
-  /*
-  componentDidMount() {
-    // setTimeout(() => {
-    //   const geocoder = new google.maps.Geocoder();
-    //   const geoPromise = address =>
-    //     new Promise((res, rej) =>
-    //       geocoder.geocode({ address }, (results, status) => res([results, status])));
-
-    //   Promise.map(
-    //     dataFull,
-    //     async (local) => {
-    //       if (local.satelite) return local.direccion;
-
-    //       const newDireccion = `${local.direccion}, ${local.comuna}`;
-
-    //       const [l, status] = await geoPromise(newDireccion)
-    //         .delay(1000)
-    //         .catch(e => console.log(e) || []);
-
-    //       console.log(status);
-
-    //       if (l && status === 'OK') {
-    //         return l.map((j) => {
-    //           if (j && j.formatted_address.indexOf(local.direccion) > -1) {
-    //             return {
-    //               ...local,
-    //               satelite: {
-    //                 lat: j.geometry.location.lat(),
-    //                 lng: j.geometry.location.lng(),
-    //               },
-    //               dir_map: j.formatted_address,
-    //             };
-    //           }
-
-    //           return {
-    //             direccion: j.formatted_address,
-    //             newdir: newDireccion,
-    //             satelite: {
-    //               lat: j.geometry.location.lat(),
-    //               lng: j.geometry.location.lng(),
-    //             },
-    //           };
-    //         });
-    //       }
-
-    //       return { direccion: newDireccion, status };
-    //     },
-    //     {
-    //       concurrency: 1,
-    //     },
-    //   )
-    //     .then(d => console.log(d) || d.filter(e => e))
-    //     .then(d => console.log(JSON.stringify(d)));
-    // }, 10000);
-  }
-*/
-  componentDidMount() {}
 
   cambiarSeccion = seccion => e => {
     e.preventDefault();
@@ -111,6 +55,8 @@ class App extends Component {
       img: d.img && d.img.replace('/public', ''),
     }));
 
+  onChangeBusqueda = e => this.setState({ busqueda: e.target.value });
+
   findLocal = (local = this.state.local) => this.state.data.find(lcl => lcl.nombre === local);
 
   render() {
@@ -121,6 +67,8 @@ class App extends Component {
           secciones={this.state.secciones}
           cambiarSeccion={this.cambiarSeccion}
           cambiarSeccionSelect={this.cambiarSeccionSelect}
+          onChangeBusqueda={this.onChangeBusqueda}
+          busqueda={this.state.busqueda}
         />
         <div className="rm-mapa__container">
           <PopUp
@@ -138,6 +86,7 @@ class App extends Component {
             abrirPopup={this.abrirPopup}
             seccion={this.state.seccion}
             data={this.parseMarkers()}
+            busqueda={this.state.busqueda}
           />
         </div>
       </div>
