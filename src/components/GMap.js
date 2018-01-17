@@ -53,7 +53,7 @@ const GMap = withScriptjs(
     >
       {data
         .filter(marker => !seccion || marker.cat === seccion)
-        .filter(marker => (busqueda ? marker.n.includes(busqueda) : true))
+        .filter(marker => (busqueda ? marker.n.includes(busqueda.toLowerCase()) : true))
         .map(
           (marker, i) =>
             (marker.satelite ? (
