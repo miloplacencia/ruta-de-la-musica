@@ -17,9 +17,7 @@ const PopUp = ({ abierto, cerrarPopup, local }) =>
       </button>
       <div className="rm-mapa__popup-inner">
         <div className="rm-mapa__popup-scroller">
-          {images[local.n] ? (
-            <img src={images[local.n]} alt={local.n} width="100" height="100" />
-          ) : null}
+          {local.img ? <img src={local.img} alt={local.n} width="100" height="100" /> : null}
           <h1>{local.nombre}</h1>
           <p>{local.resena}</p>
           <hr />
@@ -40,9 +38,7 @@ const PopUp = ({ abierto, cerrarPopup, local }) =>
                 </svg>
                 {local.horario}
               </li>
-            ) : (
-              ''
-            )}
+            ) : null}
             {local.direccion ? (
               <li className="half flex row justify-center align-center">
                 <svg
@@ -59,9 +55,7 @@ const PopUp = ({ abierto, cerrarPopup, local }) =>
                 </svg>
                 {local.direccion}
               </li>
-            ) : (
-              ''
-            )}
+            ) : null}
           </ul>
 
           <ul className="flex lista row p0 m0">
@@ -84,9 +78,7 @@ const PopUp = ({ abierto, cerrarPopup, local }) =>
                   </svg>
                 </a>
               </li>
-            ) : (
-              ''
-            )}
+            ) : null}
             {local.ig ? (
               <li className="center text-center">
                 <a
@@ -111,9 +103,7 @@ const PopUp = ({ abierto, cerrarPopup, local }) =>
                   </svg>
                 </a>
               </li>
-            ) : (
-              ''
-            )}
+            ) : null}
             {local.web ? (
               <li className="center text-center">
                 <a
@@ -138,9 +128,7 @@ const PopUp = ({ abierto, cerrarPopup, local }) =>
                   </svg>
                 </a>
               </li>
-            ) : (
-              ''
-            )}
+            ) : null}
           </ul>
         </div>
       </div>
