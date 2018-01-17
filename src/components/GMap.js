@@ -55,7 +55,7 @@ const GMap = withScriptjs(
         .filter(marker => !seccion || marker.cat === seccion)
         .filter(marker => (busqueda ? marker.n.includes(busqueda.toLowerCase()) : true))
         .map(
-          (marker, i) =>
+          marker =>
             (marker.satelite ? (
               <Marker
                 position={{ lat: marker.satelite.lat, lng: marker.satelite.lng }}
@@ -65,7 +65,7 @@ const GMap = withScriptjs(
                   size: new google.maps.Size(35, 44),
                   origin: new google.maps.Point(seccionesIcon[marker.cat], 0),
                 }}
-                onClick={abrirPopup(marker.nombre, i)}
+                onClick={abrirPopup(marker.nombre)}
                 key={marker.nombre}
               />
             ) : null),
