@@ -405,30 +405,11 @@ body {
     .rm-mapa__popup-scroller p {
       font-size: 14px; }
 
-.sprite-local {
-  background-image: url("sprite-local.jpg");
-  background-position: 0 0;
-  display: inline-block; }
-  .sprite-local.boton {
-    width: 33px;
-    height: 33px;
-    text-decoration: none; }
-    .sprite-local.boton.facebook {
-      background-position: 0 0; }
-    .sprite-local.boton.instagram {
-      background-position: -33px 0; }
-    .sprite-local.boton.web {
-      background-position: -67px 0; }
-  .sprite-local.image {
-    height: 21px;
-    background-position: 0 -33px;
-    margin-right: 8px; }
-    .sprite-local.image.reloj {
-      width: 21px;
-      background-position: 0 -33px; }
-    .sprite-local.image.pointer {
-      width: 18px;
-      background-position: -21px -33px; }
+.mr8 {
+  margin-right: 8px; }
+
+.d-block {
+  display: block; }
 
 .flex {
   display: flex; }

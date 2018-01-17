@@ -184,41 +184,11 @@ body {
     }
   }
 }
-
-.sprite-local {
-  background-image: url('sprite-local.jpg');
-  background-position: 0 0;
-  display: inline-block;
-
-  &.boton {
-    width: 33px;
-    height: 33px;
-    text-decoration: none;
-
-    &.facebook {
-      background-position: 0 0;
-    }
-    &.instagram {
-      background-position: -33px 0;
-    }
-    &.web {
-      background-position: -67px 0;
-    }
-  }
-  &.image {
-    height: 21px;
-    background-position: 0 -33px;
-    margin-right: 8px;
-
-    &.reloj {
-      width: 21px;
-      background-position: 0 -33px;
-    }
-    &.pointer {
-      width: 18px;
-      background-position: -21px -33px;
-    }
-  }
+.mr8 {
+  margin-right: 8px;
+}
+.d-block {
+  display: block;
 }
 
 .flex {
