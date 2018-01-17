@@ -19,16 +19,12 @@ class App extends Component {
     data,
     secciones: [
       'Discoteque',
-      'Barrio Brasil',
-      'Espacio Cultural',
-      'Tiendas de música y estudios de grabación',
-      'Estudia Música en Conce',
-      'Sector Plaza Perú',
-      'Música en Vivo',
-      'Calle Maipu',
-      'Espacios Públicos',
-      'Hitos',
       'Donde Comer',
+      'Espacio Cultural',
+      'Espacios Públicos',
+      'Estudia Música en Conce',
+      'Música en Vivo',
+      'Tiendas de música y estudios de grabación',
     ],
   };
   /*
@@ -112,7 +108,7 @@ class App extends Component {
   parseMarkers = () =>
     this.state.data.map(d => ({
       ...d,
-      img: d.img.replace('/public', ''),
+      img: d.img && d.img.replace('/public', ''),
     }));
 
   findLocal = (local = this.state.local) => this.state.data.find(lcl => lcl.nombre === local);

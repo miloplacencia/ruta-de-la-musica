@@ -946,21 +946,6 @@
   },
   {
     "cat": "Hitos",
-    "subcat": "Centro Cultural",
-    "nombre": "Aula Magna",
-    "resena": "",
-    "comuna": "Concepción",
-    "direccion": "Caupolicán 459",
-    "web": "",
-    "fb": "",
-    "ig": "",
-    "fono": "",
-    "horario": "",
-    "mail": "",
-    "satelite": { "lat": -36.8273281, "lng": -73.05117389999998 }
-  },
-  {
-    "cat": "Hitos",
     "subcat": "",
     "nombre": "Colegio Salesiano",
     "resena": "",

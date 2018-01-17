@@ -34,9 +34,18 @@ const defaultOptions = {
     },
   ],
 };
+const seccionesIcon = {
+  Discoteque: 0,
+  'Donde Comer': 70,
+  'Espacio Cultural': 210,
+  'Espacios Públicos': 175,
+  'Estudia Música en Conce': 140,
+  'Música en Vivo': 35,
+  'Tiendas de música y estudios de grabación': 105,
+};
 
 const GMap = withScriptjs(
-  withGoogleMap(({ abrirPopup, seccion, markers, data }) => (
+  withGoogleMap(({ abrirPopup, seccion, data }) => (
     <GoogleMap
       defaultZoom={defaultZoom}
       defaultCenter={defaultCenter}
@@ -49,8 +58,9 @@ const GMap = withScriptjs(
               position={{ lat: marker.satelite.lat, lng: marker.satelite.lng }}
               icon={{
                 url: sprite,
+                scaledSize: new google.maps.Size(245, 44),
                 size: new google.maps.Size(35, 44),
-                origin: new google.maps.Point(0, 0),
+                origin: new google.maps.Point(seccionesIcon[marker.cat], 0),
               }}
               onClick={abrirPopup(marker.nombre, i)}
               key={marker.nombre}
@@ -64,7 +74,7 @@ const GMap = withScriptjs(
 GMap.propTypes = {
   abrirPopup: PropTypes.func.isRequired,
   seccion: PropTypes.string.isRequired,
-  markers: PropTypes.arrayOf(PropTypes.object).isRequired,
+  data: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default GMap;
